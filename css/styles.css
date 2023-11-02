@@ -1,0 +1,475 @@
+
+body{
+ padding-top: 0px;
+ margin-top: 0px;
+ background-image: url('../images/background.jpg');
+ background-position: top right;
+ background-attachment: fixed;
+}
+.menu{
+  height: 130px;
+  margin-bottom: 40px;
+  background-color: sienna;
+  display: flex;
+  vertical-align: middle; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: height 1s, width 1s;
+}
+
+.menu-left{
+flex: 1;
+
+}
+
+.logo{
+height: 70px;
+width: 100px;
+vertical-align: middle;
+transition: height 1s, width 1s;
+}
+
+.logo:hover{
+  height: 150px;
+  width: 250px;
+  padding-top: 15px;
+  
+
+  }
+
+.menu-mid{
+ flex: 1;
+ display: flex; 
+ margin-right: 10px;
+ margin-left: 10px;
+ justify-content: space-between;
+}
+.search-bar{
+  flex: 1;
+  vertical-align: center;
+  border: 2px;
+  border-style: solid;
+  border-color: rgb(165, 165, 165);
+  border-radius: 2px;
+  height: 50px;
+  font-size: 25px;
+  max-width: 300px;
+  outline-style: solid;
+  outline-color: navy;
+
+}
+
+.test{
+  color:PapayaWhip;
+  font-weight: bolder;
+  }
+  .test:link{
+    text-decoration: none;
+  }
+
+.menu-buttons{
+background-color: rgba(0, 0, 0, 0);
+border: none;
+color:PapayaWhip;
+cursor: pointer;
+padding-left: 7px;
+padding-right: 7px;
+font: italic small-caps bold 25px Georgia;
+vertical-align: middle;
+margin-top: 15px;
+transition: text-shadow 0.15, text-decoration 0.15;
+
+}
+
+.menu-right{
+  display: flex;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 900px;
+  padding-right: 50px;
+
+}
+
+.menu-options {
+  position: relative;
+  display: inline-block;
+}
+
+.home{
+  font-size: 30px;
+  margin-top: 12px;
+  color: rgba(73, 72, 184, 0.932);
+
+}
+.home .test{
+  color: rgba(72, 72, 84, 0.932);
+  font-weight: bolder;
+}
+
+.menu-buttons:hover{
+  color: rgb(21, 4, 42);
+  text-shadow: 2px 2px rgba(30, 130, 230, 0.8);
+  text-decoration: underline;
+}
+h1{
+  padding-top: 130px;
+  color: PapayaWhip;
+}
+p{
+  font-size: 20px;
+}
+
+.div-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  vertical-align: middle;
+  margin-bottom: 100px;
+}
+
+.image{
+  height: 300px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.imageg{
+  width: 390px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.text{
+  font: Verdana;
+  font-size: 20px;
+  font-style: bold;
+  padding-top: 10px;
+  color: PapayaWhip;
+}
+
+.text2{
+  font: Verdana;
+  padding-left: 18px;
+  font-size: 20px;
+  color: PapayaWhip;
+}
+
+/* menu bottom */
+
+.menu-bot{
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 1fr ;
+  vertical-align: middle; 
+  margin-top: 35px;
+}
+
+.store-button,
+.others-buttons{
+  position: relative;
+  font-size: 20px;
+  color: powderblue;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding-left: 7px;
+  padding-right: 7;
+  font: Verdana;
+  font-size: 30px;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-left: 15px;
+  transition: font-size 0.15s, margin-left 0.15s, margin-top 0.15s;
+  display: grid;
+}
+
+
+.store-button .store-message{
+  opacity: 0;
+  font-size: 10px;
+  background-color: none;
+  color: rgb(225, 224, 21);
+  border: none;
+  pointer-events: none;
+  position: absolute;
+  bottom: -20px;
+  transition: opacity 0.3s, font-size 0.3s;
+}
+.store-button:hover .store-message
+{
+  opacity: 1;
+  font-size: 30px;
+}
+
+.contact{
+background-color: rgba(0, 0, 0, 0);
+color:PapayaWhip;
+cursor: pointer;
+padding-left: 7px;
+padding-right: 7px;
+font: italic small-caps bold 25px Georgia;
+vertical-align: middle;
+margin-top: 15px;
+transition: text-shadow 0.15, text-decoration 0.15;
+border: none;
+}
+
+.contact-option-div {
+  display: none;	
+  position: absolute;
+  top: 25px;
+  background-color: bisque;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.contact-option-div a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-option-div a:hover {background-color: sienna;}
+
+.contact .contact-option-div {
+  margin-top: 20px;
+  pointer-events: none;
+}
+
+.contact-format{
+margin-top: 5px;
+}
+
+.contact:hover .contact-option-div
+{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-options:hover .contact-option-div {display: block;}
+
+.menu-options:hover .contact {
+  color: rgb(21, 4, 42);
+  text-shadow: 2px 2px rgba(30, 130, 230, 0.8);
+  text-decoration: underline;	
+}
+
+.button-facebook{
+  background-color: rgb(100, 35, 100);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+  margin-right: 15px;
+}
+
+.button-tweeter{
+  background-color: rgb(100, 35, 100);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+  margin-left: 15px;
+}
+
+.tweet:hover {
+  background-color: rgb(200, 35, 100);
+  box-shadow: 10px 10px 10px rgba(177, 235, 121, 0.2);
+}
+
+.menu-social-network{
+  margin-top: 70px;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 200px ;
+  vertical-align: middle;
+  margin-bottom: 70px;
+}
+
+.test2{
+  color:white;
+}
+.test2:link{
+  text-decoration: underline;
+}
+  
+.newsletter{
+
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}  
+  
+.submit-buton{
+  background-color: aqua;
+  height: 25px;
+  width: 80px;
+  padding: 1px;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding-left: 7px;
+  padding-right: 7px;
+  font: Arial;
+}
+
+.name{
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 20px;
+  width: 250px;
+  font-size: 18px;
+  
+    }
+.email-addresse{
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 20px;
+  width: 300px;
+  font-size: 18px;
+    
+}
+.qa{
+  background-color: antiquewhite;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 250px;
+  width: 550px;
+  font-size: 18px;
+}
+.submit-buton:active{
+  background-color: rgb(107, 214, 7); 
+
+}  
+.submit-buton:active .thanks{
+  opacity: 0.8;
+}  
+
+.description
+{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right:10px;
+}
+.storry-history{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  vertical-align: middle;
+  margin-top: 150px;
+  color: PapayaWhip;
+}
+.future-image,
+.history-image{
+height: 350px;
+margin-top: 20px;
+margin-left: 150px;
+}
+
+.future,
+.history,
+.now{
+  margin-top: 10px;
+}
+.storry-now{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  vertical-align: right;
+  color: PapayaWhip;  
+}
+.now-image{
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 150px;
+  }
+
+.text-future{
+  font-size: 25px;
+  font-style: italic;
+  color: PapayaWhip;
+  font-weight: 800;
+}
+
+.test{
+  color:black;
+}
+ .test:link{
+  text-decoration: none;
+}
+  
+.about{
+  font-size: 35px;
+  margin-top: 12px;
+  color: PapayaWhip;
+  font-weight: bolder;
+}
+  
+.div-image{
+  display: inline-block;
+  vertical-align: middle;
+}
+  
+.text3{
+  font: Arial;
+  font-size: 20px;
+  font-style: italic;
+  color: orange;  
+} 
+ 
+.events-container{
+  color: blueviolet;
+}
+
+.form {
+	width: 200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.label, input, textarea {
+	display: block;
+	margin-bottom: 10px;
+	width: 30%;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+.input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.input[type="submit"]:hover {
+	background-color: #3e8e41;
+}	
